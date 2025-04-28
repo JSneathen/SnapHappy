@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Snap Happy Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Snap Happy</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Our Services</h1>
+    <ul>
+      <li>Family Portraits</li>
+      <li>Newborn Photography</li>
+      <li>Pet Sessions</li>
+      <li>Outdoor & Lifestyle Shoots</li>
+      <li>In-Studio Photography</li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Snap Happy Photography. All rights reserved.</p>
+  </footer>
+</body>
+</html>
