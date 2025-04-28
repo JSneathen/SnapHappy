@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
   background-color: #fff;
+  line-height: 1.6;
 }
 
 nav {
@@ -35,8 +36,6 @@ nav ul {
   flex-direction: row;
   gap: 2rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li {
@@ -47,41 +46,54 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-main {
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: auto;
+nav ul li a:hover {
+  color: #f25c54;
 }
 
-h1 {
+header.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1738747728849-bcb6ac1d79f1?q=80&w=2400&auto=format&fit=crop') no-repeat center center/cover;
+  color: white;
+}
+
+header.hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+header.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-form input,
-form textarea,
-form button {
+section.features {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.feature h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #f25c54;
+}
+
+.feature p {
   font-size: 1rem;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background-color: #f25c54;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 1rem;
 }
 
 footer {
