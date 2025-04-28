@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snap Happy Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1738747728849-bcb6ac1d79f1?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+      background-size: 800px 1000px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 35rem;
+      color: white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      color: white;
+      background-color: black;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #f25c54;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    section.features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .feature {
+      text-align: center;
+    }
+
+    .feature img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #f25c54;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Snap Happy</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Snap Happy Photography</h1>
+    <p>Capturing the joy and love of families through timeless, professional portraits.</p> 
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1696271026779-0f9edc0b3230?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Family Outdoor Session">
+      <h3>Outdoor Sessions</h3>
+      <p>Natural light, candid moments, and stunning backgrounds that make memories shine.</p>
+    </div>
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Studio Portraits">
+      <h3>Studio Portraits</h3>
+      <p>Classic and creative in-studio shoots with expert lighting and backdrops.</p>
+    </div>
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1604917621956-10dfa7cce2e7?q=80&w=3362&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Newborn Sessions">
+      <h3>Newborn Moments</h3>
+      <p>Soft, gentle, and heartwarming captures of your baby’s earliest days.</p>
+    </div>
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1612940960267-4549a58fb257?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pets">
+      <h3>Fur-ever Friends</h3>
+      <p>Bring your fur baby to capture their unique personality.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Snap Happy Photography. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
